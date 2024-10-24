@@ -1,0 +1,14 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-console": "off", // Disable warnings for console logs
+    "no-unused-vars": "off", // Disable warnings for unused variables
+    "no-unused-imports": "off", // Disable errors for unused imports (depends on the plugin)
+    "@typescript-eslint/no-unused-vars": "off", // Turn off unused vars specifically for TypeScript
+    "@typescript-eslint/no-explicit-any": "off", // Disable warnings for 'any' type
+    "react/react-in-jsx-scope": "off", // Disable React in scope requirement (optional for Next.js)
+    "@typescript-eslint/ban-types": "off", // Disable banning the use of the '{}' type
+    "@typescript-eslint/consistent-type-definitions": "off", // Disable errors related to type definitions
+    "@typescript-eslint/no-object-literal-type-assertion": "off" // Disable warnings for object literal type assertions
+  }
+}

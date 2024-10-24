@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.btn-primary {
+  @apply bg-[#50B69A] px-5 py-[7px] rounded-md text-white text-sm font-semibold hover:bg-[#50B69A];
+}
+
+.btn-primary-outline {
+  @apply border border-[#50B69A] rounded-md px-5 py-[7px] text-[#50B69A] text-sm font-semibold hover:bg-[#50B69A] hover:text-white transition-all duration-500;
+}
+
+/* The scrollbar track */
+::-webkit-scrollbar {
+  width: 0;
+  background-color: #f5f5f5;
+}
+
+/* The scrollbar handle (or thumb) */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-light;
+  border-radius: 0px;
+}
+
+/* The scrollbar handle when hovered */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
+/* The scrollbar button (up, down, left, right) */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* The scrollbar track piece */
+::-webkit-scrollbar-track-piece {
+  background-color: #f5f5f5;
+}
